@@ -1,24 +1,26 @@
+%define snap r61
+
 %define _requires_exceptions pear(graph\\|pear(includes\\|pear(modules
 %define _enable_debug_packages %{nil}
 %define debug_package          %{nil}
 
-Summary:	SAMBA module for the LMC web interface
-Name:		lmc-web-samba
-Version:	2.0.0
-Release:	%mkrel 3
+Summary:	SAMBA module for the MMC web interface
+Name:		mmc-web-samba
+Version:	2.0.1
+Release:	%mkrel 0.%{snap}.1
 License:	GPL
 Group:		System/Servers
 URL:		http://lds.linbox.org/
-Source0:	%{name}-%{version}.tar.gz
-Patch0:		lmc-web-samba-Makefile_fix.diff
+Source0:	%{name}-%{version}-%{snap}.tar.gz
+Patch0:		mmc-web-samba-Makefile_fix.diff
 Requires:	samba-server samba-vscan-clamav
-Requires:	lmc-web-base
+Requires:	mmc-web-base
 Requires:	nss_ldap
 BuildArch:      noarch
 Buildroot:	%{_tmppath}/%{name}-buildroot
 
 %description
-Linbox Management Console web interface designed by Linbox.
+Mandriva Management Console web interface designed by Linbox.
 
 This is the SAMBA module.
 
@@ -45,4 +47,4 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root,0755)
 %doc COPYING Changelog
-%{_datadir}/lmc/modules/samba
+%{_datadir}/mmc/modules/samba
