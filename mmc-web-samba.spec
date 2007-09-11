@@ -7,7 +7,7 @@
 Summary:	SAMBA module for the MMC web interface
 Name:		mmc-web-samba
 Version:	2.0.1
-Release:	%mkrel 0.%{snap}.1
+Release:	%mkrel 0.%{snap}.2
 License:	GPL
 Group:		System/Servers
 URL:		http://lds.linbox.org/
