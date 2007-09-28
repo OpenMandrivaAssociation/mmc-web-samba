@@ -1,17 +1,15 @@
-%define snap r61
-
 %define _requires_exceptions pear(graph\\|pear(includes\\|pear(modules
 %define _enable_debug_packages %{nil}
 %define debug_package          %{nil}
 
 Summary:	SAMBA module for the MMC web interface
 Name:		mmc-web-samba
-Version:	2.0.1
-Release:	%mkrel 0.%{snap}.2
+Version:	2.1.0
+Release:	%mkrel 1
 License:	GPL
 Group:		System/Servers
 URL:		http://lds.linbox.org/
-Source0:	%{name}-%{version}-%{snap}.tar.gz
+Source0:	%{name}-%{version}.tar.gz
 Patch0:		mmc-web-samba-Makefile_fix.diff
 Requires:	samba-server samba-vscan-clamav
 Requires:	mmc-web-base
