@@ -15,7 +15,6 @@ Requires:	samba-server samba-vscan-clamav
 Requires:	mmc-web-base
 Requires:	nss_ldap
 BuildArch:      noarch
-Buildroot:	%{_tmppath}/%{name}-buildroot
 
 %description
 Mandriva Management Console web interface designed by Linbox.
