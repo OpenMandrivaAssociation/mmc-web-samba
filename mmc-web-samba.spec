@@ -5,13 +5,13 @@
 Summary:	SAMBA module for the MMC web interface
 Name:		mmc-web-samba
 Version:	2.3.1
-Release:	%mkrel 2
+Release:	%mkrel 3
 License:	GPL
 Group:		System/Servers
 URL:		http://mds.mandriva.org/
 Source0:	%{name}-%{version}.tar.gz
 Patch0:		mmc-web-samba-Makefile_fix.diff
-Requires:	samba-server samba-vscan-clamav
+Requires:	samba-server
 Requires:	mmc-web-base >= 2.3.1
 Requires:	nss_ldap
 BuildArch:      noarch
