@@ -12,7 +12,7 @@ URL:		http://mds.mandriva.org/
 Source0:	%{name}-%{version}.tar.gz
 Patch0:		mmc-web-samba-Makefile_fix.diff
 Requires:	samba-server
-Requires:	mmc-web-base >= 2.3.1
+Requires:	mmc-web-base >= 2.3.2
 Requires:	nss_ldap
 BuildArch:      noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
