@@ -4,8 +4,8 @@
 
 Summary:	SAMBA module for the MMC web interface
 Name:		mmc-web-samba
-Version:	2.3.1
-Release:	%mkrel 3
+Version:	2.3.2
+Release:	%mkrel 1
 License:	GPL
 Group:		System/Servers
 URL:		http://mds.mandriva.org/
@@ -15,7 +15,7 @@ Requires:	samba-server
 Requires:	mmc-web-base >= 2.3.1
 Requires:	nss_ldap
 BuildArch:      noarch
-Buildroot:	%{_tmppath}/%{name}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Mandriva Management Console web interface designed by Linbox.
