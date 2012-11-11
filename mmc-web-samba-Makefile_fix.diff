@@ -1,0 +1,21 @@
+--- Makefile	2007-06-29 11:18:16.000000000 +0200
++++ Makefile.oden	2007-06-29 18:45:26.000000000 +0200
+@@ -20,7 +20,7 @@
+ 
+ # General Makefile variables
+ DESTDIR = 
+-PREFIX = /usr/local
++PREFIX = /usr
+ DATADIR = $(PREFIX)/share/mmc
+ MODULESWEBSUBDIR = /modules/
+ INSTALL = $(shell which install)
+@@ -62,8 +62,6 @@
+ install: build_mo
+ 	@echo ""
+ 	@echo "Installing mmc-web-samba in $(DESTDIR)$(DATADIR)$(MODULESWEBSUBDIR)"
+-	$(INSTALL) -d -m 755 -o root -g root $(DESTDIR)$(DATADIR)$(MODULESWEBSUBDIR)
++	$(INSTALL) -d -m 755 $(DESTDIR)$(DATADIR)$(MODULESWEBSUBDIR)
+ 	$(CP) -R $(FILESTOINSTALL) $(DESTDIR)$(DATADIR)$(MODULESWEBSUBDIR)
+-	$(CHOWN) -R root $(DESTDIR)$(DATADIR)$(MODULESWEBSUBDIR)
+-	$(CHGRP) -R root $(DESTDIR)$(DATADIR)$(MODULESWEBSUBDIR)
+ 	find $(DESTDIR)$(DATADIR)$(MODULESWEBSUBDIR)/$(FILESTOINSTALL)/locale -name *.po -exec rm -f {} \;
